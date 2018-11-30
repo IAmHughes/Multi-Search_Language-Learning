@@ -14,14 +14,10 @@
     <label for="tenor_gif"><b>Tenor Gif</b></label><br>
     <input type="checkbox" id="forvo" name="forvo" value="forvo" checked>
     <label for="forvo"><b>Forvo</b></label><br>
-    <input type="checkbox" id="dict_cc" name="dict_cc" value="dict_cc" checked>
-    <label for="dict_cc"><b>Dict.cc</b></label><br>
     <input type="checkbox" id="linguee" name="linguee" value="linguee" checked>
     <label for="linguee"><b>Linguee</b></label><br>
-    <input type="checkbox" id="wiktionary" name="wiktionary" value="wiktionary" checked>
-    <label for="wiktionary"><b>Wiktionary</b></label><br>
-    <input type="checkbox" id="the_free_dictionary" name="the_free_dictionary" value="the_free_dictionary" checked>
-    <label for="the_free_dictionary"><b>TheFreeDictionary</b></label><br>
+    <input type="checkbox" id="great_italian_dictionary" name="great_italian_dictionary" value="great_italian_dictionary" checked>
+    <label for="great_italian_dictionary"><b>Great Italian Dictionary</b></label><br>
     <input type="checkbox" id="verbix" name="verbix" value="verbix" checked>
     <label for="verbix"><b>Verbix (Is this a Verb?)</b></label><br>
   </form>
@@ -38,7 +34,7 @@
 
     if (document.getElementById("google_image").checked == true)
     {
-      window.open("http://translate.google.com/translate?hl=en&sl=de&tl=en&u=http%3A%2F%2Fwww.google.de%2Fsearch%3Fq%3D" + q + "%26num%3D10%26hl%3Dde%26tbo%3Dd%26site%3Dimghp%26tbm%3Disch%26sout%3D1%26biw%3D1075%26bih%3D696");
+      window.open("http://translate.google.com/translate?sl=it&tl=en&prev=_t&hl=en&ie=UTF-8&eotf=1&u=http://www.google.it/search%3Fq%3D" + q + "%26hl%3Den%26safe%3Doff%26authuser%3D0%26site%3Dimghp%26tbm%3Disch%26sout%3D1%26biw%3D1071%26bih%3D611");
     }
     if (document.getElementById("tenor_gif").checked == true)
     {
@@ -46,27 +42,19 @@
     }
     if (document.getElementById("forvo").checked == true)
     {
-      window.open("http://www.forvo.com/word/" + q + "/#de");
-    }
-    if (document.getElementById("dict_cc").checked == true)
-    {
-      window.open("http://www.dict.cc/?s=" + q);
+      window.open("http://www.forvo.com/word/" + q + "/#it");
     }
     if (document.getElementById("linguee").checked == true)
     {
-      window.open("https://www.linguee.com/english-german/search?source=german&query=" + q);
+      window.open("https://www.linguee.com/english-italian/search?source=italian&query=" + q);
     }
-    if (document.getElementById("wiktionary").checked == true)
+    if (document.getElementById("great_italian_dictionary").checked == true)
     {
-      window.open("http://translate.google.com/translate?sl=de&tl=en&u=http%3A%2F%2Fde.wiktionary.org%2Fwiki%2F" + q);
-    }
-    if (document.getElementById("the_free_dictionary").checked == true)
-    {
-      window.open("http://translate.google.com/translate?sl=de&tl=en&u=http%3A%2F%2Fde.thefreedictionary.com%2F" + q);
+      window.open("http://translate.google.com/translate?hl=en&sl=auto&tl=en&u=http%3A%2F%2Fwww.grandidizionari.it%2FDizionario_Italiano%2Fparola%2Fparola.aspx%3Fquery%3D" + q);
     }
     if (document.getElementById("verbix").checked == true)
     {
-      window.open("http://www.verbix.com/webverbix/German/" + q + ".html");
+      window.open("http://www.verbix.com/webverbix/Italian/" + q + ".html");
     }
     document.getElementById("query").value = "";
   }
