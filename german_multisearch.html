@@ -2,10 +2,12 @@
 <html>
 	<head>
 	</head>
-	<body style="background-color:grey">
+	<body style="background-color:darkgray">
+		<h2>What German word would you like to multi-search?</h2>
+		<h3>Type below, then click the <i>"Search"</i> button.</h3>
+		<input type="text" id="query" autofocus>
+		<input type="button" id="search" value="Search" onclick="searchy();"></br></br>
 
-		<p>What German word would you like to multisearch? Type below, then press enter please.</p>
-		<input type="text" id="boxu" autofocus>
 
 		<script>
 		document.getElementById("boxu").onkeydown = function(e) {searchy(e)};
