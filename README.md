@@ -1,8 +1,8 @@
 # Multi-Search_German
-Simple webpage that allows you to search for a word in German and find images, definitions, conjugation tables, and more for learning German
+Simple webpage that allows you to search for a word in your target language and find images, definitions, conjugation tables, and more for use in flash card systems (Anki, etc.) and general language learning.
 
 ## Getting Started
-Navigate to [the search page](https://iamhughes.github.io/Multi-Search_German/) and type your word into the search field. You can select and deselect which websites you wish to search in.
+Navigate to [the search page](https://iamhughes.github.io/Multi-Search_German/) and select your language. Type your word into the search field and press `Enter` or click the `Submit` button. You can select and deselect which websites you wish to search in.
 
 - _Note:_ The first time you use this search, you will need to disable any pop-up blocker on this page. The pop-up blocker blocks the multiple tabs from being opened
 
@@ -23,6 +23,8 @@ Currently, the following are listed as options to choose to include in your mult
 
 ## Contributing
 Please read [CONTRIBUTING.md](https://github.com/IAmHughes/Multi-Search_German/blob/master/.github/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests, feature requests, and bug reports.
+
+The webpage is being hosted by [GitHub Pages](https://pages.github.com/), and therefore the source code for the site and searches are located on the [`gh-pages` branch](https://github.com/IAmHughes/Multi-Search_German/tree/gh-pages).
 
 ## Author
 - **Thomas Hughes** - *Initial Work* - [@IAmHughes](https://GitHub.com/IAmHughes)
