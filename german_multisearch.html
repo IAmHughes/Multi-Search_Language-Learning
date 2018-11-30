@@ -8,6 +8,25 @@
 		<input type="text" id="query" autofocus>
 		<input type="button" id="search" value="Search" onclick="searchy();"></br></br>
 
+		<h3>You can check which sites you want to include in the multi-search.</h3>
+		<form>
+			<input type="checkbox" id="google_image" name="google_image" value="google_image" checked>
+			<label for="google_image"><b>Google Image</b></label></br>
+			<input type="checkbox" id="tenor_gif" name="tenor_gif" value="tenor_gif" checked>
+			<label for="tenor_gif"><b>Tenor Gif</b></label></br>
+			<input type="checkbox" id="forvo" name="forvo" value="forvo" checked>
+			<label for="forvo"><b>Forvo</b></label></br>
+			<input type="checkbox" id="dict_cc" name="dict_cc" value="dict_cc" checked>
+			<label for="dict_cc"><b>Dict.cc</b></label></br>
+			<input type="checkbox" id="linguee" name="linguee" value="linguee" checked>
+			<label for="linguee"><b>Linguee</b></label></br>
+			<input type="checkbox" id="wiktionary" name="wiktionary" value="wiktionary" checked>
+			<label for="wiktionary"><b>Wiktionary</b></label></br>
+			<input type="checkbox" id="the_free_dictionary" name="the_free_dictionary" value="the_free_dictionary" checked>
+			<label for="the_free_dictionary"><b>TheFreeDictionary</b></label></br>
+			<input type="checkbox" id="verbix" name="verbix" value="verbix" checked>
+			<label for="verbix"><b>Verbix (Is this a Verb?)</b></label></br>
+		</form>
 
 		<script>
 		document.getElementById("boxu").onkeydown = function(e) {searchy(e)};
