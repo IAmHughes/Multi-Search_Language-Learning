@@ -8,6 +8,7 @@ Navigate to [the search page](https://iamhughes.github.io/Multi-Search_Language-
 
 ## Supported languages
 Currently, the following are listed as options to choose to include in your multi-search:
+- [French](https://iamhughes.github.io/Multi-Search_Language-Learning/html/french.html)
 - [German](https://iamhughes.github.io/Multi-Search_Language-Learning/html/german.html)
 - [Spanish](https://iamhughes.github.io/Multi-Search_Language-Learning/html/spanish.html)
 
