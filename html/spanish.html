@@ -6,5 +6,50 @@
   <input type="text" id="query" autofocus>
   <input type="button" id="search" value="Search" onclick="searchy();">
   <input type="button" id="return" value="Back to Language List" onclick="location.href = '../index.html';"><br><br>
+  <script>
+  document.getElementById("query").onkeydown = function(e)
+  {
+    if (e.which == 13) { searchy() }
+  };
+
+  function searchy()
+  {
+    var q = encodeURIComponent(document.getElementById("query").value);
+
+    if (document.getElementById("google_image").checked == true)
+    {
+      window.open("http://translate.google.com/translate?hl=en&sl=es&tl=en&u=http%3A%2F%2Fwww.google.es%2Fsearch%3Fq%3D" + q + "%26hl%3Den%26tbo%3Dd%26site%3Dimghp%26tbm%3Disch%26sout%3D1%26biw%3D1366%26bih%3D643");
+    }
+    if (document.getElementById("tenor_gif").checked == true)
+    {
+      window.open("https://tenor.com/search/" + q + "-gifs");
+    }
+    if (document.getElementById("forvo").checked == true)
+    {
+      window.open("http://www.forvo.com/word/" + q + "/#es");
+    }
+    if (document.getElementById("word_reference").checked == true)
+    {
+      window.open("http://www.wordreference.com/es/en/translation.asp?spen=" + q);
+    }
+    if (document.getElementById("linguee").checked == true)
+    {
+      window.open("http://www.linguee.com/english-spanish/search?source=spanish&query=" + q);
+    }
+    if (document.getElementById("the_free_dictionary").checked == true)
+    {
+      window.open("http://translate.google.com/translate?hl=en&sl=es&tl=en&u=http%3A%2F%2Fes.thefreedictionary.com%2F" + q);
+    }
+    if (document.getElementById("spanish_dict").checked == true)
+    {
+      window.open("http://www.spanishdict.com/translate/" + q);
+    }
+    if (document.getElementById("verbix").checked == true)
+    {
+      window.open("http://www.verbix.com/webverbix/Spanish/" + q + ".html");
+    }
+    document.getElementById("query").value = "";
+  }
+  </script>
 </body>
 </html>
