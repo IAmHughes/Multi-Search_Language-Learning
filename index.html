@@ -3,11 +3,10 @@
 	<head>
 	</head>
 	<body style="background-color:darkgray">
-		<h2>What German word would you like to multi-search?</h2>
+		<h1>What German word would you like to multi-search?</h2>
 		<h3>Type below, then click the <i>"Search"</i> button.</h3>
 		<input type="text" id="query" autofocus>
 		<input type="button" id="search" value="Search" onclick="searchy();"></br></br>
-
 		<h3>You can check which sites you want to include in the multi-search.</h3>
 		<form>
 			<input type="checkbox" id="google_image" name="google_image" value="google_image" checked>
@@ -29,6 +28,11 @@
 		</form>
 
 		<script>
+		document.getElementById("query").onkeydown = function(e)
+		{
+			if (e.which == 13) { searchy() }
+		};
+
 		function searchy()
 		{
 			var q = encodeURIComponent(document.getElementById("query").value);
