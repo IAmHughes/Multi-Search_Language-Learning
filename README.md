@@ -1,4 +1,4 @@
-# Multi-Search for language learning
+# Multi-search for language learning
 Simple webpage that allows you to search for a word in your target language and find images, definitions, conjugation tables, and more for use in flash card systems (Anki, etc.) and general language learning.
 
 ## Getting started
