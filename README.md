@@ -14,6 +14,7 @@ Currently, the following are listed as options to choose to include in your mult
 - [French](https://iamhughes.github.io/Multi-Search_Language-Learning/html/french.html)
 - [German](https://iamhughes.github.io/Multi-Search_Language-Learning/html/german.html)
 - [Italian](https://iamhughes.github.io/Multi-Search_Language-Learning/html/italian.html)
+- [Japanese](https://iamhughes.github.io/Multi-Search_Language-Learning/html/japanese.html)
 - [Spanish](https://iamhughes.github.io/Multi-Search_Language-Learning/html/spanish.html)
 
 ## Tools
