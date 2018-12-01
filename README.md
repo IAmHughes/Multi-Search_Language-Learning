@@ -7,7 +7,7 @@ Navigate to [the search page](https://iamhughes.github.io/Multi-Search_Language-
 - _Note:_ The first time you use this search, you will need to disable any pop-up blocker on this page. The pop-up blocker blocks the multiple tabs from being opened
 
 ## Supported languages
-Currently, the following are listed as options to choose to include in your multi-search:
+Currently, the following are languages are available for multi-search:
 - [Chinese](https://iamhughes.github.io/Multi-Search_Language-Learning/html/chinese.html)
 - [Dutch](https://iamhughes.github.io/Multi-Search_Language-Learning/html/dutch.html)
 - [English](https://iamhughes.github.io/Multi-Search_Language-Learning/html/english.html)
