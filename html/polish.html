@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<body style="background-color:silver">
+  <h1>What Spanish word would you like to multi-search?</h1>
+  <h3>Type below, then click the <i>"Search"</i> button.</h3>
+  <input type="text" id="query" autofocus>
+  <input type="button" id="search" value="Search" onclick="searchy();">
+  <input type="button" id="return" value="Back to Language List" onclick="location.href = '../index.html';"><br><br>
+  <h3>You can check which sites you want to include in the multi-search.</h3>
+  <form>
+    <input type="checkbox" id="google_image" name="google_image" value="google_image" checked>
+    <label for="google_image"><b>Google Image</b></label><br>
+    <!-- <input type="checkbox" id="tenor_gif" name="tenor_gif" value="tenor_gif" checked> -->
+    <!-- <label for="tenor_gif"><b>Tenor Gif</b></label><br> -->
+    <input type="checkbox" id="forvo" name="forvo" value="forvo" checked>
+    <label for="forvo"><b>Forvo</b></label><br>
+    <!-- <input type="checkbox" id="word_reference" name="word_reference" value="word_reference" checked> -->
+    <!-- <label for="word_reference"><b>WordReference</b></label><br> -->
+    <!-- <input type="checkbox" id="linguee" name="linguee" value="linguee" checked> -->
+    <!-- <label for="linguee"><b>Linguee</b></label><br> -->
+    <!-- <input type="checkbox" id="the_free_dictionary" name="the_free_dictionary" value="the_free_dictionary" checked> -->
+    <!-- <label for="the_free_dictionary"><b>TheFreeDictionary</b></label><br> -->
+    <!-- <input type="checkbox" id="spanish_dict" name="spanish_dict" value="spanish_dict" checked> -->
+    <!-- <label for="spanish_dict"><b>SpanishDict</b></label><br> -->
+    <!-- <input type="checkbox" id="verbix" name="verbix" value="verbix" checked> -->
+    <!-- <label for="verbix"><b>Verbix (Is this a Verb?)</b></label><br> -->
+    <input type="checkbox" id="bab-la" name="bab-la" value="bab-la" checked>
+    <label for="bab-la"><b>bab.la (dictionary)</b></label><br>
+    <input type="checkbox" id="wiktionary" name="wiktionary" value="wiktionary" checked>
+    <label for="wiktionary"><b>Wiktionary</b></label><br>
+  </form>
+
+  <script>
+  document.getElementById("query").onkeydown = function(e)
+  {
+    if (e.which == 13) { searchy() }
+  };
+
+  function searchy()
+  {
+    var q = encodeURIComponent(document.getElementById("query").value);
+
+    if (document.getElementById("google_image").checked == true)
+    {
+      window.open("http://www.google.pl/search?q=" + q + "&num=10&hl=pl&tbo=d&site=imghp&tbm=isch&sout=1&biw=1075&bih=696");
+    }
+    if (document.getElementById("forvo").checked == true)
+    {
+      window.open("http://www.forvo.com/word/" + q + "/#pl");
+    }
+    if (document.getElementById("bab-la").checked == true)
+    {
+      window.open("http://en.bab.la/dictionary/polish-english/" + q);
+    }
+    if (document.getElementById("wiktionary").checked == true)
+    {
+      window.open("http://pl.wiktionary.org/wiki/" + q);
+    }
+
+    document.getElementById("query").value = "";
+  }
+  </script>
+</body>
+</html>
