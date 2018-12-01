@@ -9,6 +9,7 @@ Navigate to [the search page](https://iamhughes.github.io/Multi-Search_Language-
 ## Supported languages
 Currently, the following are listed as options to choose to include in your multi-search:
 - [Chinese](https://iamhughes.github.io/Multi-Search_Language-Learning/html/chinese.html)
+- [Dutch](https://iamhughes.github.io/Multi-Search_Language-Learning/html/dutch.html)
 - [French](https://iamhughes.github.io/Multi-Search_Language-Learning/html/french.html)
 - [German](https://iamhughes.github.io/Multi-Search_Language-Learning/html/german.html)
 - [Italian](https://iamhughes.github.io/Multi-Search_Language-Learning/html/italian.html)
