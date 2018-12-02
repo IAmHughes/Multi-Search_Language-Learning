@@ -1,0 +1,24 @@
+---
+name: Chinese
+resources:
+  - name: Google Image
+    css_name: google_image
+    js_url_expression: '"http://translate.google.com/translate?hl=en&sl=zh-CN&tl=en&u=http%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3D" + q + "%26num%3D10%26hl%3Dfr%26site%3Dimghp%26tbm%3Disch%26sout%3D1%26biw%3D1242%26bih%3D640"'
+  - name: Tenor Gif
+    css_name: tenor_gif
+    js_url_expression: '"https://tenor.com/search/" + q + "-gifs"'
+  - name: Forvo
+    css_name: forvo
+    js_url_expression: '"http://www.forvo.com/word/" + q + "/#zh"'
+  - name: NCIKU / LINE Dict
+    css_name: nciku
+    js_url_expression: '"http://www.nciku.com/search/all/" + q'
+  - name: Linguee
+    css_name: linguee
+    js_url_expression: '"https://www.linguee.com/english-chinese/search?query=" + q'
+  - name: Wiktionary
+    css_name: wiktionary
+    js_url_expression: '"http://translate.google.com/translate?&sl=zh-CN&sp=nmt4&tl=en&u=https://zh.wiktionary.org/wiki/" + q'
+  - name: TheFreeDictionary
+    css_name: the_free_dictionary
+    js_url_expression: '"http://translate.google.com/translate?hl=&sl=zh-CN&tl=en&u=http%3A%2F%2Fzh.thefreedictionary.com%2F" + q'

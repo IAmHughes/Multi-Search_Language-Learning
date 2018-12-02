@@ -1,0 +1,35 @@
+---
+layout: default
+---
+{% assign lang = site.data.languages[page.language] %}
+<h1>What {{ lang.name }} word would you like to multi-search?</h1>
+<h3>Type below, then click the <i>"Search"</i> button.</h3>
+<input type="text" id="query" autofocus>
+<input type="button" id="search" value="Search" onclick="searchy();">
+<input type="button" id="return" value="Back to Language List" onclick="location.href = '../index.html';"><br><br>
+<h3>You can check which sites you want to include in the multi-search.</h3>
+<form>
+  {% for res in lang.resources %}
+    <input type="checkbox" id="{{ res.css_name }}" name="{{ res.css_name }}" value="{{ res.css_name }}" checked>
+    <label for="{{ res.css_name }}"><b>{{ res.name }}</b></label><br>
+  {% endfor %}
+</form>
+
+<script>
+document.getElementById("query").onkeydown = function(e)
+{
+  if (e.which == 13) { searchy() }
+};
+
+function searchy()
+{
+  var q = encodeURIComponent(document.getElementById("query").value);
+  {% for res in lang.resources %}
+  if (document.getElementById("{{ res.css_name }}").checked == true)
+  {
+    window.open({{ res.js_url_expression }});
+  }
+  {% endfor %}
+  document.getElementById("query").value = "";
+}
+</script>
