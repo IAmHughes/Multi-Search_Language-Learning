@@ -1,0 +1,32 @@
+---
+name: Dutch
+resources:
+- name: Google Image
+  css_name: google_image
+  js_url_expression: '"http://www.google.nl/search?q=" + q + "&num=10&hl=nl&site=imghp&tbm=isch&sout=1&biw=1242&bih=640"'
+- name: Tenor Gif
+  css_name: tenor_gif
+  js_url_expression: '"https://tenor.com/search/" + q + "-gifs"'
+- name: Forvo
+  css_name: forvo
+  js_url_expression: '"http://www.forvo.com/word/" + q + "/#nl"'
+- name: Bab.la
+  css_name: babla
+  js_url_expression: '"http://en.bab.la/dictionary/dutch-english/" + q'
+- name: Linguee
+  css_name: linguee
+  js_url_expression: '"https://www.linguee.com/english-dutch/search?query=" + q'
+- name: Wiktionary
+  css_name: wiktionary
+  js_url_expression: '"http://translate.google.com/translate?sl=nl&tl=en&u=http%3A%2F%2Fnl.wiktionary.org%2Fwiki%2F"
+    + q'
+- name: TheFreeDictionary
+  css_name: the_free_dictionary
+  js_url_expression: '"http://translate.google.com/translate?sl=nl&tl=en&u=http%3A%2F%2Fnl.thefreedictionary.com%2F"
+    + q'
+- name: Van Dale
+  css_name: vandale
+  js_url_expression: '"http://www.vandale.nl/opzoeken?pattern=" + q + "&lang=nn"'
+- name: Verbix (Is this a Verb?)
+  css_name: verbix
+  js_url_expression: '"http://www.verbix.com/webverbix/Dutch/" + q + ".html"'

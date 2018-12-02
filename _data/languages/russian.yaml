@@ -1,0 +1,30 @@
+---
+name: Russian
+resources:
+- name: Google Image
+  css_name: google_image
+  js_url_expression: '"http://translate.google.com/translate?hl=en&sl=de&tl=en&u=http%3A%2F%2Fwww.google.de%2Fsearch%3Fq%3D"
+    + q + "%26num%3D10%26hl%3Dde%26tbo%3Dd%26site%3Dimghp%26tbm%3Disch%26sout%3D1%26biw%3D1075%26bih%3D696"'
+- name: Tenor Gif
+  css_name: tenor_gif
+  js_url_expression: '"https://tenor.com/search/" + q + "-gifs"'
+- name: Forvo
+  css_name: forvo
+  js_url_expression: '"http://www.forvo.com/word/" + q + "/#de"'
+- name: Dict.cc
+  css_name: dict_cc
+  js_url_expression: '"http://www.dict.cc/?s=" + q'
+- name: Linguee
+  css_name: linguee
+  js_url_expression: '"https://www.linguee.com/english-german/search?query=" + q'
+- name: Wiktionary
+  css_name: wiktionary
+  js_url_expression: '"http://translate.google.com/translate?sl=de&tl=en&u=http%3A%2F%2Fde.wiktionary.org%2Fwiki%2F"
+    + q'
+- name: TheFreeDictionary
+  css_name: the_free_dictionary
+  js_url_expression: '"http://translate.google.com/translate?sl=de&tl=en&u=http%3A%2F%2Fde.thefreedictionary.com%2F"
+    + q'
+- name: Verbix (Is this a Verb?)
+  css_name: verbix
+  js_url_expression: '"http://www.verbix.com/webverbix/German/" + q + ".html"'

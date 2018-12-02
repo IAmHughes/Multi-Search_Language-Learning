@@ -1,0 +1,30 @@
+---
+name: Japanese
+resources:
+- name: Google Image
+  css_name: google_image
+  js_url_expression: '"http://translate.google.com/translate?hl=en&sl=ja&tl=en&u=http%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3D"
+    + q + "%26num%3D10%26hl%3Den%26tbo%3Dd%26site%3Dimghp%26tbm%3Disch%26sout%3D1%26biw%3D1075%26bih%3D696"'
+- name: Tenor Gif
+  css_name: tenor_gif
+  js_url_expression: '"https://tenor.com/search/" + q + "-gifs"'
+- name: Forvo
+  css_name: forvo
+  js_url_expression: '"http://www.forvo.com/word/" + q + "/#jp"'
+- name: Jisho
+  css_name: jisho
+  js_url_expression: '"http://jisho.org/words?jap=" + q + "&eng=&dict=edict"'
+- name: Linguee
+  css_name: linguee
+  js_url_expression: '"https://www.linguee.com/english-german/search?query=" + q'
+- name: Wiktionary
+  css_name: wiktionary
+  js_url_expression: '"http://translate.google.com/translate?sl=ja&tl=en&u=http%3A%2F%2Fja.wiktionary.org%2Fwiki%2F"
+    + q'
+- name: Weblio
+  css_name: weblio
+  js_url_expression: '"http://translate.google.com/translate?hl=en&sl=ja&tl=en&u=http%3A%2F%2Fwww.weblio.jp%2Fcontent%2F"
+    + q'
+- name: Verbix (Is this a Verb?)
+  css_name: verbix
+  js_url_expression: '"http://www.verbix.com/webverbix/Japanese/" + q + ".html"'

@@ -1,0 +1,25 @@
+---
+name: English
+resources:
+- name: Google Image
+  css_name: google_image
+  js_url_expression: '"http://images.google.com/search?q=" + q + "&tbm=isch&sout=1%26hl%3Den%26tbo%3Dd%26site%3Dimghp%26tbm%3Disch%26sout%3D1%26biw%3D1366%26bih%3D643"'
+- name: Tenor Gif
+  css_name: tenor_gif
+  js_url_expression: '"https://tenor.com/search/" + q + "-gifs"'
+- name: Forvo
+  css_name: forvo
+  js_url_expression: '"http://www.forvo.com/word/" + q + "/#en"'
+- name: Word Reference
+  css_name: word_reference
+  js_url_expression: '"http://www.wordreference.com/definition/" + q'
+- name: Linguee
+  css_name: linguee
+  js_url_expression: '"https://www.linguee.com/english-german/search?query=" + q'
+- name: Tatoeba
+  css_name: tatoeba
+  js_url_expression: '"https://tatoeba.org/eng/sentences/search?from=eng&to=und&query="
+    + q'
+- name: Verbix (Is this a Verb?)
+  css_name: verbix
+  js_url_expression: '"http://www.verbix.com/webverbix/English/" + q + ".html"'
