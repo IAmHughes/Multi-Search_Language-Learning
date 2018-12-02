@@ -1,5 +1,6 @@
 ---
 name: English
+extra_user_info: for those who want to learn English
 enabled: true
 resources:
 - name: Google Image

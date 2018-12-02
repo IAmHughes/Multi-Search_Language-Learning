@@ -10,7 +10,11 @@ layout: default
     {% for lang_hash in sorted_languages %}
       {% assign lang = lang_hash[1] %}
       {% if lang.enabled %}
-        <li><a href="html/{{ lang.name | downcase }}.html">{{ lang.name }} Multi-Search</a></li><br>
+        {% if lang.extra_user_info %}
+          <li><a href="html/{{ lang.name | downcase }}.html">{{ lang.name }} Multi-Search ({{ lang.extra_user_info }})</a></li><br>
+        {% else %}
+          <li><a href="html/{{ lang.name | downcase }}.html">{{ lang.name }} Multi-Search</a></li><br>
+        {% endif %}
       {% endif %}
     {% endfor %}
   </ul>
