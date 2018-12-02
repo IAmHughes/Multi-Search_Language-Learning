@@ -1,0 +1,35 @@
+---
+name: Polish
+resources:
+- name: Google Image
+  css_name: google_image
+  js_url_expression: '"http://www.google.pl/search?q=" + q + "&num=10&hl=pl&tbo=d&site=imghp&tbm=isch&sout=1&biw=1075&bih=696"'
+- name: Tenor Gif
+  css_name: tenor_gif
+  js_url_expression: '"https://tenor.com/search/" + q + "-gifs"'
+- name: Forvo
+  css_name: forvo
+  js_url_expression: '"http://www.forvo.com/word/" + q + "/#pl"'
+- name: Dict.cc
+  css_name: dict_cc
+  js_url_expression: '"https://enpl.dict.cc/?s=" + q'
+- name: WordReference
+  css_name: word_reference
+  js_url_expression: '"http://www.wordreference.com/plen/" + q'
+- name: Linguee
+  css_name: linguee
+  js_url_expression: '"https://www.linguee.com/english-polish/search?source=polish&query="
+    + q'
+- name: TheFreeDictionary
+  css_name: the_free_dictionary
+  js_url_expression: '"https://translate.google.com/translate?hl=en&sl=pl&tl=en&u=https%3A%2F%2Fpl.thefreedictionary.com%2F"
+    + q'
+- name: Verbix (Is this a Verb?)
+  css_name: verbix
+  js_url_expression: '"http://www.verbix.com/webverbix/Polish/" + q + ".html"'
+- name: Bab.la (dictionary)
+  css_name: bab_la
+  js_url_expression: '"http://en.bab.la/dictionary/polish-english/" + q'
+- name: Wiktionary
+  css_name: wiktionary
+  js_url_expression: '"http://pl.wiktionary.org/wiki/" + q'
