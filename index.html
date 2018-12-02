@@ -6,16 +6,10 @@ layout: default
 <h2><strong>Choose your Language:</strong></h2>
 <h3>
   <ul>
-    <li><a href="html/chinese.html">Chinese Multi-Search</a></li><br>
-    <li><a href="html/dutch.html">Dutch Multi-Search</a></li><br>
-    <li><a href="html/english.html">English Multi-Search (for those who want to learn English)</a></li><br>
-    <li><a href="html/french.html">French Multi-Search</a></li><br>
-    <li><a href="html/german.html">German Multi-Search</a></li><br>
-    <li><a href="html/italian.html">Italian Multi-Search</a></li><br>
-    <li><a href="html/japanese.html">Japanese Multi-Search</a></li><br>
-    <li><a href="html/polish.html">Polish Multi-Search</a></li><br>
-    <!-- <li><a href="html/portuguese.html">Portuguese Multi-Search</a></li><br> -->
-    <!-- <li><a href="html/russian.html">Russian Multi-Search</a></li><br> -->
-    <li><a href="html/spanish.html">Spanish Multi-Search</a></li><br>
+    {% assign sorted_languages = site.data.languages | sort %}
+    {% for lang_hash in sorted_languages %}
+      {% assign lang = lang_hash[1] %}
+      <li><a href="html/{{ lang.name | downcase }}.html">{{ lang.name }} Multi-Search</a></li><br>
+    {% endfor %}
   </ul>
 </h3>
