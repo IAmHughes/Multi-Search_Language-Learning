@@ -9,7 +9,9 @@ layout: default
     {% assign sorted_languages = site.data.languages | sort %}
     {% for lang_hash in sorted_languages %}
       {% assign lang = lang_hash[1] %}
-      <li><a href="html/{{ lang.name | downcase }}.html">{{ lang.name }} Multi-Search</a></li><br>
+      {% if lang.enabled %}
+        <li><a href="html/{{ lang.name | downcase }}.html">{{ lang.name }} Multi-Search</a></li><br>
+      {% endif %}
     {% endfor %}
   </ul>
 </h3>

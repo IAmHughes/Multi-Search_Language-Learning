@@ -15,6 +15,7 @@ ARGV.each do |file|
   lang = File.basename(file, ".html")
   doc = {
     "name" => upcase_first(lang),
+    "enabled" => true,
     "resources" => []
   }
 

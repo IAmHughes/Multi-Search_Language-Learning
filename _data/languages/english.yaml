@@ -1,5 +1,6 @@
 ---
 name: English
+enabled: true
 resources:
 - name: Google Image
   css_name: google_image

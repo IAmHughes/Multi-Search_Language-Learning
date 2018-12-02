@@ -1,5 +1,6 @@
 ---
 name: Portuguese
+enabled: false
 resources:
 - name: Google Image
   css_name: google_image
