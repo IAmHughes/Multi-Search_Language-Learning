@@ -7,4 +7,4 @@ The webpage is being hosted by [GitHub Pages](https://pages.github.com/), and th
 
 ## Pull Request Process
 1. Ensure any secrets (such as `API Tokens`) are removed before committing your code and opening a pull request.
-2. You may merge the Pull Request in once you have the sign-off of a CODEOWNER, or if you do not have permission to do that, you may request the CODEOWNER to merge it for you. Once merged, please delete your branch.
+2. You may merge the Pull Request in once you have the sign-off of a CODEOWNER, or if you do not have permission to do that, you may request the CODEOWNER to merge it for you.
