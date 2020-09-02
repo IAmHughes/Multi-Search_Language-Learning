@@ -18,6 +18,8 @@
     <label for="word_reference"><b>WordReference</b></label><br>
     <input type="checkbox" id="linguee" name="linguee" value="linguee" checked>
     <label for="linguee"><b>Linguee</b></label><br>
+    <input type="checkbox" id="wiktionary" name="wiktionary" value="wiktionary" checked>
+    <label for="wiktionary"><b>Wiktionary</b></label><br>
     <input type="checkbox" id="the_free_dictionary" name="the_free_dictionary" value="the_free_dictionary" checked>
     <label for="the_free_dictionary"><b>TheFreeDictionary</b></label><br>
     <input type="checkbox" id="spanish_dict" name="spanish_dict" value="spanish_dict" checked>
@@ -55,6 +57,10 @@
     if (document.getElementById("linguee").checked == true)
     {
       window.open("http://www.linguee.com/english-spanish/search?query=" + q);
+    }
+    if (document.getElementById("wiktionary").checked == true)
+    {
+      window.open("http://translate.google.com/translate?sl=es&tl=en&u=http%3A%2F%2Fde.wiktionary.org%2Fwiki%2F" + q);
     }
     if (document.getElementById("the_free_dictionary").checked == true)
     {
