@@ -1,5 +1,5 @@
 # Multi-search for language learning
-Simple webpage that allows you to search for a word in your target language and find images, definitions, conjugation tables, and more for use in flash card systems (Anki, etc.) and general language learning.
+Basic webpage that allows you to search for a word in your target language and find images, definitions, conjugation tables, and more for use in flash card systems (Anki, etc.) and general language learning. Leverages GitHub Pages.
 
 ## Getting started
 Navigate to [the search page](https://iamhughes.github.io/Multi-Search_Language-Learning/) and select your language. Type your word into the search field and press `Enter` or click the `Submit` button. You can select and deselect which websites you wish to search in.
