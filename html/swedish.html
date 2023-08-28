@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<body style="background-color:silver">
+  <h1>What Swedish word would you like to multi-search?</h1>
+  <h3>Type below, then click the <i>"Search"</i> button.</h3>
+  <input type="text" id="query" autofocus>
+  <input type="button" id="search" value="Search" onclick="searchy();">
+  <input type="button" id="return" value="Back to Language List" onclick="location.href = '../index.html';"><br><br>
+  <h3>You can check which sites you want to include in the multi-search.</h3>
+  <form>
+    <input type="checkbox" id="google_image" name="google_image" value="google_image" checked>
+    <label for="google_image"><b>Google Image</b></label><br>
+    <input type="checkbox" id="tenor_gif" name="tenor_gif" value="tenor_gif" checked>
+    <label for="tenor_gif"><b>Tenor Gif</b></label><br>
+    <input type="checkbox" id="forvo" name="forvo" value="forvo" checked>
+    <label for="forvo"><b>Forvo</b></label><br>
+    <input type="checkbox" id="youglish" name="youglish" value="youglish" checked>
+    <label for="youglish"><b>Youglish</b></label><br>
+    <input type="checkbox" id="SAO" name="SAO" value="SAO" checked>
+    <label for="SAO"><b>Svenska Akademiens Ordböcker</b></label><br>
+    <input type="checkbox" id="wiktionary" name="wiktionary" value="wiktionary" checked>
+    <label for="wiktionary"><b>Wiktionary</b></label><br>
+    <input type="checkbox" id="Glosbe" name="Glosbe" value="Glosbe" checked>
+    <label for="Glosbe"><b>Glosbe</b></label><br>
+    <input type="checkbox" id="Korp" name="Korp" value="Korp" checked>
+    <label for="Korp"><b>Korp</b></label><br>
+    <input type="checkbox" id="verbix" name="verbix" value="verbix" checked>
+    <label for="verbix"><b>Verbix (Is this a Verb?)</b></label><br>
+    <input type="checkbox" id="Synonymer" name="Synonymer" value="Synonymer" checked>
+    <label for="Synonymer"><b>Synonymer</b></label><br>
+  </form>
+
+  <script>
+  document.getElementById("query").onkeydown = function(e)
+  {
+    if (e.which == 13) { searchy() }
+  };
+
+  function searchy()
+  {
+    var q = encodeURIComponent(document.getElementById("query").value);
+
+    if (document.getElementById("google_image").checked == true)
+    {
+      window.open("https://www.google.se/search?q=" + q + "&tbm=isch&hl=sv"); 
+    }
+    if (document.getElementById("tenor_gif").checked == true)
+    {
+      window.open("https://tenor.com/sv/search/" + q + "-gifs");
+    }
+    if (document.getElementById("forvo").checked == true)
+    {
+      window.open("https://forvo.com/search/" + q + "/sv/");
+    }
+    if (document.getElementById("youglish").checked == true)
+    {
+      window.open("https://youglish.com/pronounce/" + q + "/swedish?");
+    }
+    if (document.getElementById("SAO").checked == true) 
+    {
+      window.open("https://svenska.se/tre/?sok=" + q + "&pz=1");
+    }
+    if (document.getElementById("wiktionary").checked == true)
+    {
+      window.open("https://sv.wiktionary.org/wiki/" + q);
+    }
+    if (document.getElementById("Glosbe").checked == true) 
+    {
+      window.open("https://glosbe.com/sv/en/" + q);
+    }
+    if (document.getElementById("Korp").checked == true) 
+    {
+      window.open("https://spraakbanken.gu.se/korp/#?cqp=%5B%5D&corpus=attasidor,da,svt-2004,svt-2005,svt-2006,svt-2007,svt-2008,svt-2009,svt-2010,svt-2011,svt-2012,svt-2013,svt-2014,svt-2015,svt-2016,svt-2017,svt-2018,svt-2019,svt-2020,svt-2021,svt-2022,svt-2023,svt-nodate&search=word%7C" + q + "&page=0");
+    }
+    if (document.getElementById("verbix").checked == true)
+    {
+      window.open("https://www.verbix.com/webverbix/go.php?T1=" + q + "&Submit=Go&D1=19&H1=119");
+    }
+    if (document.getElementById("Synonymer").checked == true) 
+    {
+      window.open("https://www.synonymer.se/sv-syn/" + q);
+    }
+    document.getElementById("query").value = "";
+  }
+  </script>
+</body>
+</html>
